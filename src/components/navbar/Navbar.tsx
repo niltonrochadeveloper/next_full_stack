@@ -1,5 +1,7 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
+import styles from './page.module.css'
 
 interface linksNavBarProps {
     id: number, 
@@ -44,14 +46,17 @@ const links: linksNavBarProps[] = [
 
 const Navbar = () => {
     return (
-        <div>
-            <Link href={'/'}>Nilton Rocha</Link>
-            <div>
+        <div className={styles.container}>
+            <Link href={'/'} className={styles.logo}>Nilton Rocha</Link>
+            <div className={styles.links}>
                 {links.map((link) => (
-                    <Link key={link.id} href={link.url}>
+                    <Link key={link.id} href={link.url} className={styles.link}>
                         {link.title}
                     </Link>
                 ))}
+                <button 
+                 className={styles.logout}
+                 onClick={() => {console.log(`logged out`)}}>Logout</button>
             </div>
         </div>
     )
