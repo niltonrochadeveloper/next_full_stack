@@ -12,12 +12,12 @@ interface linksNavBarProps {
 const links: linksNavBarProps[] = [
     {
       id: 1,
-      title: "Home",
+      title: "Ínicio",
       url: "/",
     },
     {
       id: 2,
-      title: "Portfolio",
+      title: "Portfólio",
       url: "/portfolio",
     },
     {
@@ -27,12 +27,12 @@ const links: linksNavBarProps[] = [
     },
     {
       id: 4,
-      title: "About",
+      title: "Sobre",
       url: "/about",
     },
     {
       id: 5,
-      title: "Contact",
+      title: "Contato",
       url: "/contact",
     },
     {
